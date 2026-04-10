@@ -58,6 +58,59 @@ class _HeroContent extends StatelessWidget {
 
   const _HeroContent({this.centered = false, this.onViewProjects});
 
+  void _showPasswordDialog(BuildContext context) {
+    final controller = TextEditingController();
+    bool obscure = true;
+    String? error;
+
+    showDialog(
+      context: context,
+      builder: (ctx) => StatefulBuilder(
+        builder: (ctx, setState) => AlertDialog(
+          title: const Text('Enter Password'),
+          content: Column(
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              TextField(
+                controller: controller,
+                obscureText: obscure,
+                decoration: InputDecoration(
+                  labelText: 'Password',
+                  errorText: error,
+                  suffixIcon: IconButton(
+                    icon: Icon(obscure ? Icons.visibility_off : Icons.visibility),
+                    onPressed: () => setState(() => obscure = !obscure),
+                  ),
+                ),
+                onSubmitted: (_) => _validate(ctx, controller.value.text, (e) => setState(() => error = e)),
+              ),
+            ],
+          ),
+          actions: [
+            TextButton(
+              onPressed: () => Navigator.pop(ctx),
+              child: const Text('Cancel'),
+            ),
+            ElevatedButton(
+              style: ElevatedButton.styleFrom(backgroundColor: AppTheme.primary, foregroundColor: Colors.white),
+              onPressed: () => _validate(ctx, controller.value.text, (e) => setState(() => error = e)),
+              child: const Text('Open'),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+
+  void _validate(BuildContext ctx, String value, void Function(String?) setError) {
+    if (value == '12312312') {
+      Navigator.pop(ctx);
+      launchUrl(Uri.parse(AppConstants.resumeUrl));
+    } else {
+      setError('Incorrect password');
+    }
+  }
+
   @override
   Widget build(BuildContext context) {
     final colors = context.appColors;
@@ -148,7 +201,7 @@ class _HeroContent extends StatelessWidget {
             _PrimaryButton(
               label: 'Download CV',
               icon: Icons.download,
-              onTap: () => launchUrl(Uri.parse(AppConstants.resumeUrl)),
+              onTap: () => _showPasswordDialog(context),
             ),
             _OutlineButton(
               label: 'View Projects',

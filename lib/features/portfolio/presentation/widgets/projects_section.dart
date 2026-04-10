@@ -115,7 +115,7 @@ class _ProjectCardState extends State<_ProjectCard> {
               ClipRRect(
                 borderRadius:
                     const BorderRadius.vertical(top: Radius.circular(16)),
-                child: Image.network(
+                child: Image.asset(
                   widget.project.imageUrl,
                   height: 180,
                   width: double.infinity,
