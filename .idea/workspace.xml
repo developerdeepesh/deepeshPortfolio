@@ -5,18 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="19fd2956-7e26-4c8c-8f5d-0cd26da49389" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/assets/images/arginet.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/dwrs.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/icici.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/jaapCounter.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/kathalog.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/mobipetz.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/naksha.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/sarthak.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/ujjain.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/features/portfolio/data/datasources/portfolio_local_datasource.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/features/portfolio/data/datasources/portfolio_local_datasource.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/features/portfolio/presentation/widgets/hero_section.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/features/portfolio/presentation/widgets/hero_section.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/features/portfolio/presentation/widgets/projects_section.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/features/portfolio/presentation/widgets/projects_section.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,9 +24,9 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 3
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 3
+}</component>
   <component name="ProjectId" id="3C4TiHVUkZN2IpxFCjAG0E9d8lU" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -53,7 +43,7 @@
     "cf.first.check.clang-format": "false",
     "cidr.known.project.marker": "true",
     "dart.analysis.tool.window.visible": "false",
-    "git-widget-placeholder": "webdeploy",
+    "git-widget-placeholder": "gh-pages",
     "io.flutter.project.isFirstOpen": "true",
     "io.flutter.reload.alreadyRun": "true",
     "last_opened_file_path": "/Users/kingdeepesh/StudioProjects/deepeshPortfolio/assets/images",
